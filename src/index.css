@@ -9,3 +9,9 @@ lightgray: #272c35; */
   padding: 1rem;
   align-items: text-center;
 }
+.text-outline {
+  -webkit-text-stroke: 2px white;
+}
+.outline-btn {
+  @apply border-[2px] rounded-xl px-6 py-2;
+}
