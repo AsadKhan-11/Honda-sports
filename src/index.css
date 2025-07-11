@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+/* primary: #2b9de6;
+primarydark: #124175;
+darkgray: #1a1f25;
+lightgray: #272c35; */
+
+.container {
+  padding: 1rem;
+  align-items: text-center;
+}
