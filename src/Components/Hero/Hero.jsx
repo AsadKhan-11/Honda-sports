@@ -1,6 +1,7 @@
 import React from "react";
 import Honda from "../../assets/Honda.png";
 import { FaArrowRight } from "react-icons/fa";
+import Navbar from "../Navbar/Navbar";
 
 const bgImage = {
   backgroundImage: `url()`,
@@ -14,7 +15,7 @@ const Hero = () => {
       <div className="bg-gradient-to-r from-[#2b9de6] to-[#124175]/90">
         <div className="container">
           {/* navbar section */}
-
+          <Navbar />
           <section className="grid grid-cols-1 md:grid-cols-2 min-h-[700px] place-items-center">
             <div className="space-y-8">
               {" "}
@@ -25,7 +26,7 @@ const Hero = () => {
                   Sports Ev{" "}
                 </span>
               </h1>
-              <button className="outline-btn flex items-center justify-center gap-2 group">
+              <button className="outline-btn flex items-center justify-center gap-2 group cursor-pointer">
                 Explore{" "}
                 <FaArrowRight className="group-hover:translate-x-2 duration-200" />
               </button>
@@ -40,7 +41,7 @@ const Hero = () => {
                 </p>
               </div>
             </div>
-            <div className="scale-[0.8]">
+            <div className="">
               <img src={Honda} alt="Honda car image" />
             </div>
           </section>
