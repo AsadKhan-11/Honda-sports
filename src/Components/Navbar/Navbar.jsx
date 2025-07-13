@@ -1,5 +1,7 @@
 import { div } from "framer-motion/client";
 import logo from "../../assets/Honda-logo.png";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { FaSearch } from "react-icons/fa";
 
 const NavMenu = [
   { link: "Home" },
@@ -10,7 +12,7 @@ const NavMenu = [
 
 const Navbar = () => {
   return (
-    <main className="text-white ">
+    <main className="text-white absolute top-0 left-0 z-20 w-full ">
       <div className="container">
         <div className="flex justify-between items-center">
           {/* Logo section */}
@@ -31,6 +33,16 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
+          </div>
+          <div className="flex justify-center items-center gap-6">
+            <div className="rounded-icons ">
+              {" "}
+              <GiHamburgerMenu className="text-xl" />
+            </div>
+            <div className="rounded-icons">
+              {" "}
+              <FaSearch className="text-xl" />
+            </div>
           </div>
         </div>
       </div>
