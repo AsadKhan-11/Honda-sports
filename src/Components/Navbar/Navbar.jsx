@@ -1,4 +1,3 @@
-import { div } from "framer-motion/client";
 import logo from "../../assets/Honda-logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaSearch } from "react-icons/fa";
