@@ -6,8 +6,8 @@ darkgray: #1a1f25;
 lightgray: #272c35; */
 
 .container {
-  padding: 1rem;
-  align-items: text-center;
+  padding: 2rem;
+  margin: 0 auto;
 }
 .text-outline {
   -webkit-text-stroke: 2px white;
@@ -17,4 +17,7 @@ lightgray: #272c35; */
 }
 .rounded-icons {
   @apply h-[30px] w-[30px] flex justify-center items-center rounded-full bg-white/40 hover:scale-110 duration-200 p-2 cursor-pointer;
+}
+.glowing-shadow {
+  @apply shadow-[0px_0px_40px_10px_#d2e6ff,inset_0px_0px_40px_10px_#d2e6ff];
 }

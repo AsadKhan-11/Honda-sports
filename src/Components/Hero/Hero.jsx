@@ -16,7 +16,7 @@ const Hero = () => {
         <div className="container">
           {/* navbar section */}
           <Navbar />
-          <section className="grid grid-cols-1 md:grid-cols-2 min-h-[700px] place-items-center">
+          <section className="grid grid-cols-1 md:grid-cols-2 min-h-[800px] place-items-center">
             <div className="space-y-8">
               {" "}
               <h1 className="uppercase text-5xl lg:text-7xl font-bold leading-tight ">
@@ -41,8 +41,22 @@ const Hero = () => {
                 </p>
               </div>
             </div>
-            <div className="">
-              <img src={Honda} alt="Honda car image" />
+            <div className="relative">
+              <img
+                src={Honda}
+                alt="Honda car image"
+                className="relative z-30"
+              />
+              <div
+                className="border-[20px] h-[200px] w-[200px]
+               lg:h-[300px] lg:w-[300px] rounded-full border-cyan-200 absolute
+                top-10 left-1/2 z-10 glowing-shadow"
+              ></div>
+              <div className="z-[1] absolute -top-20 left-0">
+                <h1 className="text-[120px] lg:text-[180px] text-cyan-200/10 font-bold scale-120 leading-none">
+                  Sport
+                </h1>
+              </div>
             </div>
           </section>
         </div>
