@@ -1,7 +1,7 @@
 import logo from "../../assets/Honda-logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaSearch } from "react-icons/fa";
-
+import { motion } from "framer-motion";
 const NavMenu = [
   { link: "Home" },
   { link: "About" },
@@ -12,7 +12,18 @@ const NavMenu = [
 const Navbar = () => {
   return (
     <main className="text-white absolute top-0 left-0 z-20 w-full ">
-      <div className="container">
+      <motion.div
+        className="container"
+        initial={{ opacity: 0, y: -100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          type: "spring",
+          damping: 10,
+          stiffness: 100,
+          delay: 0.5,
+          duration: 0.8,
+        }}
+      >
         <div className="flex justify-between items-center">
           {/* Logo section */}
           <div className="w-[80px] invert">
@@ -44,7 +55,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </main>
   );
 };

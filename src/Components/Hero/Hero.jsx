@@ -2,21 +2,22 @@ import { motion, scale } from "framer-motion";
 import Honda from "../../assets/Honda.png";
 import { FaArrowRight } from "react-icons/fa";
 import Navbar from "../Navbar/Navbar";
+import building from "../../assets/building.jpg";
 
 const bgImage = {
-  backgroundImage: `url()`,
+  backgroundImage: `url(${building})`,
   backgroundSize: "cover",
   backgrounPosition: "center",
   backgroundRepeat: "no-repeat",
 };
 const Hero = () => {
   return (
-    <main className="text-white">
-      <div className="bg-gradient-to-r from-[#2b9de6] to-[#124175]/90">
-        <div className="container">
+    <main className="text-white" style={bgImage}>
+      <div className=" bg-gradient-to-r from-[#2b9de6] to-[#124175]/90">
+        <div className="container ">
           {/* navbar section */}
           <Navbar />
-          <section className="grid grid-cols-1 md:grid-cols-2 min-h-[800px] place-items-center">
+          <section className="grid grid-cols-1 md:grid-cols-2 min-h-[700px] place-items-center">
             <div className="space-y-8 mt-[100px] md:mt-[20px]">
               <motion.div
                 className="space-y-8"
